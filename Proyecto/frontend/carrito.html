@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Mikeys</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Mikeys</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="carrito.html" class="nav-link active">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link" id="loginLink">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Registrarse</a>
+                    </li>
+                    <li class="nav-item" id="logoutItem" style="display: none;">
+                        <a href="#" class="nav-link" id="logoutLink">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart">
+            <div class="container">
+                <h1 class="page-title">Carrito de Compras</h1>
+                
+                <div id="emptyCart" class="empty-cart" style="display: none;">
+                    <p>Tu carrito está vacío</p>
+                    <a href="productos.html" class="btn-primary">Ver Productos</a>
+                </div>
+
+                <div id="cartContent" class="cart-content">
+                    <div class="cart-items" id="cartItems">
+                        <!-- Los items del carrito se cargarán dinámicamente aquí -->
+                    </div>
+                    
+                    <div class="cart-summary">
+                        <h3>Resumen del Pedido</h3>
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">$0.00</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Envío:</span>
+                            <span id="shipping">$0.00</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total">$0.00</span>
+                        </div>
+                        <button id="checkoutBtn" class="btn-primary btn-block">Confirmar Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mikeys. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

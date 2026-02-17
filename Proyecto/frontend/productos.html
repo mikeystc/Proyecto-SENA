@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mikeys</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="nav-logo">Mikeys</h1>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html" class="nav-link active">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="carrito.html" class="nav-link">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link" id="loginLink">Iniciar Sesión</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="register.html" class="nav-link">Registrarse</a>
+                    </li>
+                    <li class="nav-item" id="logoutItem" style="display: none;">
+                        <a href="#" class="nav-link" id="logoutLink">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="container">
+                <h1 class="page-title">Nuestros Productos</h1>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Los productos se cargarán dinámicamente aquí -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mikeys. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
